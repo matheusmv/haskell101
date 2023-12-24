@@ -173,6 +173,10 @@ takeN n xs = take' xs n []
 
 -- "Coding here"
 
+dropN :: Integer -> [a] -> [a]
+dropN _ [] = []
+dropN 0 xs = xs
+dropN n (_ : xs) = dropN (n - 1) xs
 
 -- Exercise 2.14
 -----------------------------------------------------------------------------------------------------------
