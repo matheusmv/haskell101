@@ -187,6 +187,14 @@ dropN n (_ : xs) = dropN (n - 1) xs
 
 -- "Coding here"
 
+getMax :: Ord a => [a] -> a
+getMax [] = error "invalid operation"
+getMax (x : xs) = getMax' xs x
+  where
+    getMax' [] maxValue = maxValue
+    getMax' (x' : xs') maxValue
+      | x' > maxValue = getMax' xs' x'
+      | otherwise = getMax' xs' maxValue
 
 -- Exercise 2.15
 -----------------------------------------------------------------------------------------------------------
