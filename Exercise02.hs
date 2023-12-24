@@ -114,6 +114,11 @@ discardLast (x : xs) = x : discardLast xs
 
 -- "Coding here"
 
+listLen :: [a] -> Integer
+listLen xs = len xs 0
+  where
+    len [] acc = acc
+    len (_ : ys) acc = len ys (acc + 1)
 
 -- Exercise 2.10
 -----------------------------------------------------------------------------------------------------------
