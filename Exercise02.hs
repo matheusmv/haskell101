@@ -128,6 +128,9 @@ listLen xs = len xs 0
 
 -- "Coding here"
 
+listEmpty :: [a] -> Bool
+listEmpty [] = True
+listEmpty _ = False
 
 -- Exercise 2.11
 -----------------------------------------------------------------------------------------------------------
