@@ -158,6 +158,8 @@ numQuoFlr l r = floor (numQuo l r)
 
 -- "Coding here"
 
+numMod :: Integral a => a -> a -> a
+numMod = mod
 
 -- Exercise 1.14
 -----------------------------------------------------------------------------------------------------------
