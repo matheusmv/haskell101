@@ -100,6 +100,10 @@ getLast (_ : xs) = getLast xs
 
 -- "Coding here"
 
+discardLast :: [a] -> [a]
+discardLast [] = error "invalid operation"
+discardLast [_] = []
+discardLast (x : xs) = x : discardLast xs
 
 -- Exercise 2.9
 -----------------------------------------------------------------------------------------------------------
