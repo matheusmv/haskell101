@@ -10,6 +10,8 @@ module Exercise01 where
 
 -- "Coding here"
 
+doubleInteger :: Integer -> Integer
+doubleInteger x = x * 2
 
 -- Exercise 1.2
 -----------------------------------------------------------------------------------------------------------
