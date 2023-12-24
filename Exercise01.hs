@@ -145,6 +145,8 @@ lower l r
 
 -- "Coding here"
 
+numQuoFlr :: RealFrac a => a -> a -> Integer
+numQuoFlr l r = floor (numQuo l r)
 
 -- Exercise 1.13
 -----------------------------------------------------------------------------------------------------------
