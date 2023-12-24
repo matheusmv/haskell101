@@ -224,6 +224,8 @@ inLove t s = numIsOdd (numAdd t s)
 
 -- "Coding here"
 
+invertNumSign :: Num a => a -> a
+invertNumSign n = n * (-1)
 
 -- Exercise 1.19
 -----------------------------------------------------------------------------------------------------------
