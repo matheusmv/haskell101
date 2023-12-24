@@ -23,6 +23,8 @@ doubleInteger x = x * 2
 
 -- "Coding here"
 
+cuboidVolume :: Num a => a -> a -> a -> a
+cuboidVolume l w h = l * w * h
 
 -- Exercise 1.3
 -----------------------------------------------------------------------------------------------------------
