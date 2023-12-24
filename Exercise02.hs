@@ -86,6 +86,10 @@ getTail (_ : xs) = xs
 
 -- "Coding here"
 
+getLast :: [a] -> a
+getLast [] = error "invalid operation"
+getLast [x] = x
+getLast (_ : xs) = getLast xs
 
 -- Exercise 2.8
 -----------------------------------------------------------------------------------------------------------
