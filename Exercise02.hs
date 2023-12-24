@@ -234,6 +234,12 @@ sumAll (x : xs) = x + sumAll xs
 
 -- "Coding here"
 
+prodAll :: Num a => [a] -> a
+prodAll [] = 0
+prodAll xs = prod' xs 1
+  where
+    prod' [] acc = acc
+    prod' (x' : xs') acc = prod' xs' (acc * x')
 
 -- Exercise 2.18
 -----------------------------------------------------------------------------------------------------------
