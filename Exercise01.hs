@@ -35,6 +35,8 @@ cuboidVolume l w h = l * w * h
 
 -- "Coding here"
 
+numEquals :: Eq a => a -> a -> Bool
+numEquals l r = l == r
 
 -- Exercise 1.4
 -----------------------------------------------------------------------------------------------------------
