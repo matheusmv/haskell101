@@ -61,6 +61,9 @@ arrayInRange a b = [x | x <- [a .. b]]
 
 -- "Coding here"
 
+getFirst :: [a] -> a
+getFirst [] = error "invalid operation"
+getFirst (x : _) = x
 
 -- Exercise 2.6
 -----------------------------------------------------------------------------------------------------------
