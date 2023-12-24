@@ -35,6 +35,10 @@ addFirst v xs = v : xs
 
 -- "Coding here"
 
+elementAt :: [a] -> Integer -> a
+elementAt [] _ = error "invalid operation"
+elementAt (x : _) 0 = x
+elementAt (_ : xs) i = elementAt xs (i - 1)
 
 -- Exercise 2.4
 -----------------------------------------------------------------------------------------------------------
