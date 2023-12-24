@@ -50,6 +50,8 @@ elementAt (_ : xs) i = elementAt xs (i - 1)
 
 -- "Coding here"
 
+arrayInRange :: Integer -> Integer -> [Integer]
+arrayInRange a b = [x | x <- [a .. b]]
 
 -- Exercise 2.5
 -----------------------------------------------------------------------------------------------------------
