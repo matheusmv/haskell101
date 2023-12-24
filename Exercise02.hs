@@ -140,6 +140,11 @@ listEmpty _ = False
 
 -- "Coding here"
 
+listReverse :: [a] -> [a]
+listReverse xs = reverse' xs []
+  where
+    reverse' [] acc = acc
+    reverse' (x' : xs') acc = reverse' xs' (x' : acc)
 
 -- Exercise 2.12
 -----------------------------------------------------------------------------------------------------------
