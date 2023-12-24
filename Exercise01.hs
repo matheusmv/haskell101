@@ -252,3 +252,7 @@ numAbs = abs
 
 -- "Coding here"
 
+makeNegative :: (Ord a, Num a) => a -> a
+makeNegative n
+  | n <= 0 = n
+  | otherwise = invertNumSign n
