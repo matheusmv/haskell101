@@ -47,6 +47,8 @@ numEquals l r = l == r
 
 -- "Coding here"
 
+numNotEquals :: Eq a => a -> a -> Bool
+numNotEquals l r = l /= r
 
 -- Exercise 1.5
 -----------------------------------------------------------------------------------------------------------
