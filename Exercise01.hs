@@ -180,6 +180,8 @@ numIsOdd = odd
 
 -- "Coding here"
 
+numIsEven :: Integral a => a -> Bool
+numIsEven = even
 
 -- Exercise 1.16
 -----------------------------------------------------------------------------------------------------------
