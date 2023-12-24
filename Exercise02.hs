@@ -74,6 +74,9 @@ getFirst (x : _) = x
 
 -- "Coding here"
 
+getTail :: [a] -> [a]
+getTail [] = error "invalid operation"
+getTail (_ : xs) = xs
 
 -- Exercise 2.7
 -----------------------------------------------------------------------------------------------------------
