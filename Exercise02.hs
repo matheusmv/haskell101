@@ -156,6 +156,12 @@ listReverse xs = reverse' xs []
 
 -- "Coding here"
 
+takeN :: Integer -> [a] -> [a]
+takeN n xs = take' xs n []
+  where
+    take' [] _ acc = listReverse acc
+    take' _ 0 acc = listReverse acc
+    take' (x' : xs') n' acc = take' xs' (n' - 1) (x' : acc)
 
 -- Exercise 2.13
 -----------------------------------------------------------------------------------------------------------
