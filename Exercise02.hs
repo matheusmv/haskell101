@@ -222,6 +222,9 @@ getMin (x : xs) = getMin' xs x
 
 -- "Coding here"
 
+sumAll :: Num a => [a] -> a
+sumAll [] = 0
+sumAll (x : xs) = x + sumAll xs
 
 -- Exercise 2.17
 -----------------------------------------------------------------------------------------------------------
