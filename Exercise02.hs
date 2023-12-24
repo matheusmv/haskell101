@@ -250,6 +250,11 @@ prodAll xs = prod' xs 1
 
 -- "Coding here"
 
+listContains :: Eq t => t -> [t] -> Bool
+listContains v [] = False
+listContains v (x : xs)
+  | v == x = True
+  | otherwise = listContains v xs
 
 -- Exercise 2.19
 -----------------------------------------------------------------------------------------------------------
