@@ -210,6 +210,8 @@ numIs n
 
 -- "Coding here"
 
+inLove :: Integer -> Integer -> Bool
+inLove t s = numIsOdd (numAdd t s)
 
 -- Exercise 1.18
 -----------------------------------------------------------------------------------------------------------
