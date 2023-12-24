@@ -205,6 +205,14 @@ getMax (x : xs) = getMax' xs x
 
 -- "Coding here"
 
+getMin :: Ord a => [a] -> a
+getMin [] = error "invalid operation"
+getMin (x : xs) = getMin' xs x
+  where
+    getMin' [] minValue = minValue
+    getMin' (x' : xs') minValue
+      | x' < minValue = getMin' xs' x'
+      | otherwise = getMin' xs' minValue
 
 -- Exercise 2.16
 -----------------------------------------------------------------------------------------------------------
