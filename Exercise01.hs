@@ -192,6 +192,10 @@ numIsEven = even
 
 -- "Coding here"
 
+numIs :: Integral a => a -> String
+numIs n
+  | numIsEven n = "Even"
+  | otherwise = "Odd"
 
 -- Exercise 1.17
 -----------------------------------------------------------------------------------------------------------
