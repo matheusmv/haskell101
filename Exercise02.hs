@@ -275,3 +275,5 @@ aToZ = [c : xs | let xs = [], c <- ['a' .. 'z']]
 
 -- "Coding here"
 
+evenInRange2To50 :: [Integer]
+evenInRange2To50 = [n | n <- [2 .. 50], even n]
