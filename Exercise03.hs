@@ -106,6 +106,8 @@ take2ListsCombAndProd xs ys = [x * y | x <- xs, y <- ys]
 
 -- "Coding here"
 
+combAdjsAndNouns :: [String] -> [String] -> [String]
+combAdjsAndNouns xs ys = [unwords [x, y] | x <- xs, y <- ys]
 
 -- Exercise 3.10
 -----------------------------------------------------------------------------------------------------------
