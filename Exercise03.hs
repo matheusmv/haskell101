@@ -94,6 +94,8 @@ take2ListsCombProdAndFilter xs ys = filter (> 50) [x * y | x <- xs, y <- ys]
 
 -- "Coding here"
 
+take2ListsCombAndProd :: Num a => [a] -> [a] -> [a]
+take2ListsCombAndProd xs ys = [x * y | x <- xs, y <- ys]
 
 -- Exercise 3.9
 -----------------------------------------------------------------------------------------------------------
