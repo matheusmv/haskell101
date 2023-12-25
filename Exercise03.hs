@@ -1,6 +1,7 @@
 module Exercise03 where
 
 import Data.Char (isUpper)
+import Text.Read (readMaybe)
 
 -- Exercise 3.1
 -----------------------------------------------------------------------------------------------------------
@@ -201,6 +202,8 @@ cmpNum a b
 
 -- "Coding here"
 
+strToInteger :: String -> Maybe Integer
+strToInteger = readMaybe
 
 -- Exercise 3.17
 -----------------------------------------------------------------------------------------------------------
