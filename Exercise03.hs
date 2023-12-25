@@ -118,6 +118,8 @@ combAdjsAndNouns xs ys = [unwords [x, y] | x <- xs, y <- ys]
 
 -- "Coding here"
 
+length1 :: Num a => [t] -> a
+length1 xs = sum [1 | _ <- xs]
 
 -- Exercise 3.11
 -----------------------------------------------------------------------------------------------------------
