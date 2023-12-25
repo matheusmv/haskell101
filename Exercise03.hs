@@ -153,6 +153,13 @@ removeAllSpaces = filter (/= ' ')
 
 -- "Coding here"
 
+fac :: (Num t, Ord t) => t -> t
+fac n
+  | n < 0 = error "invalid operation: factorial of a negative number"
+  | otherwise = fac' n 1
+  where
+    fac' 0 acc = acc
+    fac' n' acc = fac' (n' - 1) (acc * n')
 
 -- Exercise 3.14
 -----------------------------------------------------------------------------------------------------------
