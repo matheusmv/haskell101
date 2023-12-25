@@ -45,6 +45,8 @@ filterGe12 = filter (>= 12) naturalsLeq10
 
 -- "Coding here"
 
+range50To100Mod7Eq3 :: [Integer]
+range50To100Mod7Eq3 = filter (\x -> x `mod` 7 == 3) [x | x <- [50 .. 100]]
 
 -- Exercise 3.5
 -----------------------------------------------------------------------------------------------------------
