@@ -21,6 +21,8 @@ hello10 = unwords $ replicate 10 "hello"
 
 -- "Coding here"
 
+naturalsLeq10 :: [Integer]
+naturalsLeq10 = map (* 2) $ takeWhile (<= 10) [0 ..]
 
 -- Exercise 3.3
 -----------------------------------------------------------------------------------------------------------
