@@ -82,6 +82,8 @@ allNumbersFrom10To20WithFilter = [x | x <- [10 .. 20], x `notElem` [13, 15, 19]]
 
 -- "Coding here"
 
+take2ListsCombProdAndFilter :: (Ord a, Num a) => [a] -> [a] -> [a]
+take2ListsCombProdAndFilter xs ys = filter (> 50) [x * y | x <- xs, y <- ys]
 
 -- Exercise 3.8
 -----------------------------------------------------------------------------------------------------------
