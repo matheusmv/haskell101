@@ -70,6 +70,8 @@ buildBangBoomList = map (\n -> if n > 10 then "BANG!" else "BOOM!") . filter odd
 
 -- "Coding here"
 
+allNumbersFrom10To20WithFilter :: [Integer]
+allNumbersFrom10To20WithFilter = [x | x <- [10 .. 20], x `notElem` [13, 15, 19]]
 
 -- Exercise 3.7
 -----------------------------------------------------------------------------------------------------------
