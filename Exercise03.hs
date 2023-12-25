@@ -142,6 +142,8 @@ takeAllUpperCase = filter isUpper
 
 -- "Coding here"
 
+removeAllSpaces :: String -> String
+removeAllSpaces = filter (/= ' ')
 
 -- Exercise 3.13
 -----------------------------------------------------------------------------------------------------------
