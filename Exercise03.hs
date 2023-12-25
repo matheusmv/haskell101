@@ -1,5 +1,6 @@
 module Exercise03 where
 
+import Data.Char (isUpper)
 
 -- Exercise 3.1
 -----------------------------------------------------------------------------------------------------------
@@ -129,6 +130,8 @@ length1 xs = sum [1 | _ <- xs]
 
 -- "Coding here"
 
+takeAllUpperCase :: String -> String
+takeAllUpperCase = filter isUpper
 
 -- Exercise 3.12
 -----------------------------------------------------------------------------------------------------------
