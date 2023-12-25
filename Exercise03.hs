@@ -183,6 +183,11 @@ circleP r = 2 * pi * r
 
 -- "Coding here"
 
+cmpNum :: Ord a => a -> a -> String
+cmpNum a b
+  | a > b = "GT"
+  | a < b = "LT"
+  | otherwise = "EQ"
 
 -- Exercise 3.16
 -----------------------------------------------------------------------------------------------------------
