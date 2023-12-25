@@ -1,6 +1,7 @@
 module Exercise03 where
 
 import Data.Char (isUpper)
+import Data.Maybe (fromMaybe)
 import Text.Read (readMaybe)
 
 -- Exercise 3.1
@@ -219,6 +220,11 @@ strToInteger = readMaybe
 
 -- "Coding here"
 
+sumIntStr :: String -> String -> String
+sumIntStr l r =
+  let lv = fromMaybe 0 (strToInteger l)
+      rv = fromMaybe 0 (strToInteger r)
+   in show (lv + rv)
 
 -- Exercise 3.18
 -----------------------------------------------------------------------------------------------------------
