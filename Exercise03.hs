@@ -10,6 +10,8 @@ module Exercise03 where
 
 -- "Coding here"
 
+hello10 :: String
+hello10 = unwords $ replicate 10 "hello"
 
 -- Exercise 3.2
 -----------------------------------------------------------------------------------------------------------
