@@ -58,6 +58,8 @@ range50To100Mod7Eq3 = filter (\x -> x `mod` 7 == 3) [x | x <- [50 .. 100]]
 
 -- "Coding here"
 
+buildBangBoomList :: Integral a => [a] -> [String]
+buildBangBoomList = map (\n -> if n > 10 then "BANG!" else "BOOM!") . filter odd
 
 -- Exercise 3.6
 -----------------------------------------------------------------------------------------------------------
