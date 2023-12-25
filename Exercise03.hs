@@ -33,6 +33,8 @@ naturalsLeq10 = map (* 2) $ takeWhile (<= 10) [0 ..]
 
 -- "Coding here"
 
+filterGe12 :: [Integer]
+filterGe12 = filter (>= 12) naturalsLeq10
 
 -- Exercise 3.4
 -----------------------------------------------------------------------------------------------------------
