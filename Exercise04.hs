@@ -107,7 +107,10 @@ strSlipt = words
 
 -- Coding here
 
-
+positiveOddUntil :: Integral a => a -> Int
+positiveOddUntil n
+  | odd n = fromIntegral ((n - 1) `div` 2)
+  | otherwise = fromIntegral (n `div` 2)
 
 -- Exercise 4.7
 -----------------------------------------------------------------------------------------------------------
