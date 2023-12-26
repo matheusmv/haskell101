@@ -14,7 +14,13 @@ module Exercise04 where
 
 -- Coding here
 
-
+sls :: (String, String) -> String
+sls ("", "") = ""
+sls (s1, s2) = min' ++ max' ++ min'
+  where
+    (min', max')
+      | length s1 < length s2 = (s1, s2)
+      | otherwise = (s2, s1)
 
 -- Exercise 4.2
 -----------------------------------------------------------------------------------------------------------
