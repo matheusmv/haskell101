@@ -1,5 +1,6 @@
 module Exercise04 where
 
+import Data.List (sort)
 
 -- Exercise 4.1
 -----------------------------------------------------------------------------------------------------------
@@ -181,7 +182,13 @@ countPositivesAndSumNegatives xs = count' xs 0 0
 
 -- Coding here
 
-
+ssdop :: (Num p, Ord p) => [p] -> p
+ssdop [] = 0
+ssdop [_] = 0
+ssdop xs = sum subOfDescOrderPairs
+  where
+    subOfDescOrderPairs = zipWith (-) descOrder $ tail descOrder
+    descOrder = reverse $ sort xs
 
 -- Exercise 4.11
 -----------------------------------------------------------------------------------------------------------
