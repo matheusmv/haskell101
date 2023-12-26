@@ -37,7 +37,8 @@ sls (s1, s2) = min' ++ max' ++ min'
 
 -- Coding here
 
-
+stringy :: Int -> String
+stringy size = take size $ cycle "10"
 
 -- Exercise 4.3
 -----------------------------------------------------------------------------------------------------------
