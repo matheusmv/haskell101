@@ -235,6 +235,15 @@ sumIntStr l r =
 
 -- "Coding here"
 
+greetingMsg :: String -> String
+greetingMsg name = unwords ["Hello,", name, "how are you doing today?"]
+
+getName :: IO ()
+getName = do
+  putStr "Enter your name: "
+  name <- getLine
+  let msg = greetingMsg name
+  putStrLn msg
 
 -- Exercise 3.19
 -----------------------------------------------------------------------------------------------------------
