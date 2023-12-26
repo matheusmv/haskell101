@@ -203,7 +203,13 @@ ssdop xs = sum subOfDescOrderPairs
 
 -- Coding here
 
-
+rld :: Integral a => a -> [a]
+rld n
+  | n == 0 = [0]
+  | otherwise = reverse $ digits' n []
+  where
+    digits' 0 acc = acc
+    digits' n' acc = digits' (n' `div` 10) ((n' `mod` 10) : acc)
 
 -- Exercise 4.12
 -----------------------------------------------------------------------------------------------------------
