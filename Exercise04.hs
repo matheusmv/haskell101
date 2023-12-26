@@ -92,7 +92,8 @@ countSheep n = concatMap (\c -> show c ++ " sheep...") [1 .. n]
 
 -- Coding here
 
-
+strSlipt :: String -> [String]
+strSlipt = words
 
 -- Exercise 4.6
 -----------------------------------------------------------------------------------------------------------
