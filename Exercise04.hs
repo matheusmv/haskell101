@@ -159,7 +159,14 @@ dnaToRna = map (\na -> if na == 'T' then 'U' else na)
 
 -- Coding here
 
-
+countPositivesAndSumNegatives :: (Ord a, Num a) => [a] -> [a]
+countPositivesAndSumNegatives [] = []
+countPositivesAndSumNegatives xs = count' xs 0 0
+  where
+    count' [] p n = [p, n]
+    count' (x' : xs') p n
+      | x' < 0 = count' xs' p (n + x')
+      | otherwise = count' xs' (p + 1) n
 
 -- Exercise 4.10
 -----------------------------------------------------------------------------------------------------------
