@@ -122,7 +122,8 @@ positiveOddUntil n
 
 -- Coding here
 
-
+allProd2 :: [Integer] -> [Integer]
+allProd2 = map (* 2)
 
 -- Exercise 4.8
 -----------------------------------------------------------------------------------------------------------
