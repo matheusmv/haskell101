@@ -254,6 +254,8 @@ getName = do
 
 -- "Coding here"
 
+sumPositives :: [Integer] -> Integer
+sumPositives = sum . filter (> 0)
 
 -- Exercise 3.20
 -----------------------------------------------------------------------------------------------------------
