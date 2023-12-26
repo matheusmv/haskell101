@@ -270,4 +270,5 @@ sumPositives = sum . filter (> 0)
 
 -- "Coding here"
 
-
+nPowersOf2 :: (Num a, Integral b) => b -> [a]
+nPowersOf2 n = [2 ^ x | x <- [0 .. n]]
