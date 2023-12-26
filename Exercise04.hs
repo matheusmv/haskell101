@@ -143,7 +143,8 @@ allProd2 = map (* 2)
 
 -- Coding here
 
-
+dnaToRna :: String -> String
+dnaToRna = map (\na -> if na == 'T' then 'U' else na)
 
 -- Exercise 4.9
 -----------------------------------------------------------------------------------------------------------
