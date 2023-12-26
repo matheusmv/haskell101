@@ -76,7 +76,8 @@ rps (p1, p2)
 
 -- Coding here
 
-
+countSheep :: (Show a, Num a, Enum a) => a -> String
+countSheep n = concatMap (\c -> show c ++ " sheep...") [1 .. n]
 
 -- Exercise 4.5
 -----------------------------------------------------------------------------------------------------------
