@@ -53,7 +53,16 @@ stringy size = take size $ cycle "10"
 
 -- Coding here
 
-
+rps :: (String, String) -> String
+rps (p1, p2)
+  | p1 == p2 = "Draw!"
+  | p1 `beats` p2 = "Player 1 won!"
+  | otherwise = "Player 2 won!"
+  where
+    beats "rock" "scissors" = True
+    beats "paper" "rock" = True
+    beats "scissors" "paper" = True
+    beats _ _ = False
 
 -- Exercise 4.4
 -----------------------------------------------------------------------------------------------------------
