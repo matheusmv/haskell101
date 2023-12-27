@@ -248,7 +248,14 @@ betterThanAverage score peersScores = score > myAverage
 
 -- Coding here
 
-
+firstNonConsecutive :: (Eq t, Num t) => [t] -> Maybe t
+firstNonConsecutive [] = Nothing
+firstNonConsecutive (x : xs) = checkConsecutive x xs
+  where
+    checkConsecutive _ [] = Nothing
+    checkConsecutive prev (current : rest)
+      | prev + 1 /= current = Just current
+      | otherwise = checkConsecutive current rest
 
 -- Exercise 4.14
 -----------------------------------------------------------------------------------------------------------
