@@ -227,7 +227,10 @@ rld n
 
 -- Coding here
 
-
+betterThanAverage :: (Ord a, Fractional a, Foldable t) => a -> t a -> Bool
+betterThanAverage score peersScores = score > myAverage
+  where
+    myAverage = (score + sum peersScores) / fromIntegral (length peersScores + 1)
 
 -- Exercise 4.13
 -----------------------------------------------------------------------------------------------------------
