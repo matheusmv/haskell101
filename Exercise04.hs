@@ -273,7 +273,12 @@ firstNonConsecutive (x : xs) = checkConsecutive x xs
 
 -- Coding here
 
-
+distance :: (Ord a, Num a) => a -> a -> a -> a
+distance n d w =
+  let mtoCm m = m * 100
+      sumOfDistance = (n - 1) * d
+      sumOfWidth = if n > 2 then (n - 2) * w else 0
+   in sumOfWidth + mtoCm sumOfDistance
 
 -- Exercise 4.15
 -----------------------------------------------------------------------------------------------------------
