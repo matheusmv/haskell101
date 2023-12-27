@@ -375,7 +375,13 @@ strWithEachChrRepOnce str = concat $ zipWith (\c1 c2 -> c1 : [c2]) str str
 
 -- Coding here
 
-
+remove :: String -> String
+remove str
+  | endsWith '!' str = init str
+  | otherwise = str
+  where
+    endsWith :: Eq a => a -> [a] -> Bool
+    endsWith v str' = v == last str'
 
 -- Exercise 4.20
 -----------------------------------------------------------------------------------------------------------
