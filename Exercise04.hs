@@ -355,7 +355,8 @@ subCuboidVol a b = abs $ vol a - vol b
 
 -- Coding here
 
-
+strWithEachChrRepOnce :: String -> String
+strWithEachChrRepOnce str = concat $ zipWith (\c1 c2 -> c1 : [c2]) str str
 
 -- Exercise 4.19
 -----------------------------------------------------------------------------------------------------------
