@@ -295,7 +295,13 @@ distance n d w =
 
 -- Coding here
 
-
+joinStrWithSpaces :: [String] -> String
+joinStrWithSpaces = join'
+  where
+    join' [] = ""
+    join' [x] = x
+    join' [x, x'] = x ++ " " ++ x'
+    join' (x : xs) = x ++ " " ++ join' xs
 
 -- Exercise 4.16
 -----------------------------------------------------------------------------------------------------------
