@@ -396,4 +396,9 @@ remove str
 
 -- Coding here
 
-
+rectOrSquare :: (Num a, Eq a) => a -> a -> a
+rectOrSquare l w
+  | isSquare = l * w
+  | otherwise = 2 * (l + w)
+  where
+    isSquare = l == w
