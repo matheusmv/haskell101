@@ -336,7 +336,11 @@ palindrome str
 
 -- Coding here
 
-
+subCuboidVol :: Num a => [a] -> [a] -> a
+subCuboidVol a b = abs $ vol a - vol b
+  where
+    vol [l, w, h] = l * w * h
+    vol _ = 0
 
 -- Exercise 4.18
 -----------------------------------------------------------------------------------------------------------
