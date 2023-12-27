@@ -1,5 +1,6 @@
 module Exercise04 where
 
+import Data.Char (toLower)
 import Data.List (sort)
 
 -- Exercise 4.1
@@ -315,7 +316,12 @@ joinStrWithSpaces = join'
 
 -- Coding here
 
-
+palindrome :: String -> Bool
+palindrome str
+  | str == "" = False
+  | otherwise = strLower == reverse strLower
+  where
+    strLower = map toLower str
 
 -- Exercise 4.17
 -----------------------------------------------------------------------------------------------------------
