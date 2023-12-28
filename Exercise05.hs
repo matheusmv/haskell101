@@ -97,7 +97,8 @@ sumMul n m
 
 -- Coding here
 
-
+reverseAllWords :: String -> String
+reverseAllWords str = unwords $ reverse $ words str
 
 -- Exercise 5.6
 -----------------------------------------------------------------------------------------------------------
