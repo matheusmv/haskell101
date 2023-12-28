@@ -76,7 +76,12 @@ numToSrt = show
 
 -- Coding here
 
-
+sumMul :: Integral b => b -> b -> Either String b
+sumMul n m
+  | natPos n && natPos m = Right $ sum [x | x <- [n .. m - 1], x `mod` n == 0]
+  | otherwise = Left "INVALID"
+  where
+    natPos n' = n' > 0
 
 -- Exercise 5.5
 -----------------------------------------------------------------------------------------------------------
