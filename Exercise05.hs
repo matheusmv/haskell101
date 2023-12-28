@@ -55,7 +55,8 @@ repeatStr n str = take n $ cycle str
 
 -- Coding here
 
-
+numToSrt :: (Show a) => a -> String
+numToSrt = show
 
 -- Exercise 5.4
 -----------------------------------------------------------------------------------------------------------
