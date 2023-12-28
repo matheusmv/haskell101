@@ -40,7 +40,8 @@ toAlternatingCase = map alternate'
 
 -- Coding here
 
-
+repeatStr :: Int -> String -> String
+repeatStr n str = take n $ cycle str
 
 -- Exercise 5.3
 -----------------------------------------------------------------------------------------------------------
