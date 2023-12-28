@@ -1,5 +1,6 @@
 module Exercise05 where
 
+import Data.Char (isUpper, toLower, toUpper)
 
 -- Exercise 5.1
 -----------------------------------------------------------------------------------------------------------
@@ -20,7 +21,12 @@ module Exercise05 where
 
 -- Coding here
 
-
+toAlternatingCase :: String -> String
+toAlternatingCase = map alternate'
+  where
+    alternate' c
+      | isUpper c = toLower c
+      | otherwise = toUpper c
 
 -- Exercise 5.2
 -----------------------------------------------------------------------------------------------------------
