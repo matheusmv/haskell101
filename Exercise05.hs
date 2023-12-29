@@ -115,7 +115,10 @@ reverseAllWords str = unwords $ reverse $ words str
 
 -- Coding here
 
-
+isDivisible :: Integral a => a -> a -> a -> Bool
+isDivisible n x y =
+  let z = x * y
+   in n `mod` z == 0
 
 -- Exercise 5.7
 -----------------------------------------------------------------------------------------------------------
