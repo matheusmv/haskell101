@@ -266,7 +266,8 @@ findNeedle xs = find' xs 0
 
 -- Coding here
 
-
+intsNto1 :: (Num a, Enum a) => a -> [a]
+intsNto1 n = foldl (flip (:)) [] [1 .. n]
 
 -- Exercise 5.14
 -----------------------------------------------------------------------------------------------------------
