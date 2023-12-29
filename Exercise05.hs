@@ -227,7 +227,10 @@ remove str = filter (/= '!') str ++ "!"
 
 -- Coding here
 
-
+initials :: String -> String
+initials name = case words name of
+  (firstName : lastName : _) -> [head firstName] ++ "." ++ [head lastName]
+  _ -> error "invalid name format"
 
 -- Exercise 5.12
 -----------------------------------------------------------------------------------------------------------
