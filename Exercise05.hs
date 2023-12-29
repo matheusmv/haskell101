@@ -209,7 +209,8 @@ countPoints = foldl (\acc match -> acc + parseMatch match) 0
 
 -- Coding here
 
-
+remove :: String -> String
+remove str = filter (/= '!') str ++ "!"
 
 -- Exercise 5.11
 -----------------------------------------------------------------------------------------------------------
