@@ -246,7 +246,14 @@ initials name = case words name of
 
 -- Coding here
 
-
+findNeedle :: [String] -> String
+findNeedle xs = find' xs 0
+  where
+    find' :: [String] -> Integer -> String
+    find' [] _ = "not found"
+    find' (x : xs') pos
+      | x == "needle" = "found the needle at position " ++ show pos
+      | otherwise = find' xs' (pos + 1)
 
 -- Exercise 5.13
 -----------------------------------------------------------------------------------------------------------
