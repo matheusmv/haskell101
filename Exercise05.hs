@@ -179,7 +179,17 @@ removeFirstAndLast _ = ""
 
 -- Coding here
 
-
+countPoints :: (Foldable t, Num a) => t String -> a
+countPoints = foldl (\acc match -> acc + parseMatch match) 0
+  where
+    parseMatch match =
+      case match of
+        (x : ':' : y : _) ->
+          case compare x y of
+            GT -> 3
+            LT -> 0
+            EQ -> 1
+        _ -> error "Invalid match format"
 
 -- Exercise 5.10
 -----------------------------------------------------------------------------------------------------------
