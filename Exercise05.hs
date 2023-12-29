@@ -132,7 +132,13 @@ isDivisible n x y =
 
 -- Coding here
 
-
+checkIdeas :: [String] -> String
+checkIdeas xs
+  | goodIdeas == 0 = "Fail!"
+  | goodIdeas <= 2 = "Publish!"
+  | otherwise = "I smell a series"
+  where
+    goodIdeas = length $ filter (== "good") xs
 
 -- Exercise 5.8
 -----------------------------------------------------------------------------------------------------------
