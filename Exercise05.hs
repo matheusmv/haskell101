@@ -151,7 +151,9 @@ checkIdeas xs
 
 -- Coding here
 
-
+removeFirstAndLast :: String -> String
+removeFirstAndLast (_ : xs@(_ : _)) = init xs
+removeFirstAndLast _ = ""
 
 -- Exercise 5.9
 -----------------------------------------------------------------------------------------------------------
