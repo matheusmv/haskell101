@@ -1,6 +1,6 @@
 module Exercise05 where
 
-import Data.Char (isUpper, toLower, toUpper)
+import Data.Char (chr, isUpper, toLower, toUpper)
 
 -- Exercise 5.1
 -----------------------------------------------------------------------------------------------------------
@@ -299,7 +299,8 @@ reverseStr = reverse
 
 -- Coding here
 
-
+get_char :: Int -> Char
+get_char = chr
 
 -- Exercise 5.16
 -----------------------------------------------------------------------------------------------------------
