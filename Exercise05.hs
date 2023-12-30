@@ -319,7 +319,11 @@ get_char = chr
 
 -- Coding here
 
-
+removeVowels :: String -> String
+removeVowels = rv
+  where
+    rv :: String -> String
+    rv = filter (\c -> c `notElem` ['a', 'e', 'i', 'o', 'u'])
 
 -- Exercise 5.17
 -----------------------------------------------------------------------------------------------------------
