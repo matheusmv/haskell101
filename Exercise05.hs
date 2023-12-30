@@ -397,4 +397,5 @@ toUpperCase = map toUpper
 
 -- Coding here
 
-
+isFactor :: Integral a => a -> a -> Bool
+isFactor n b = b `mod` n == 0
