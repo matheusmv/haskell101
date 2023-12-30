@@ -337,7 +337,13 @@ removeVowels = rv
 
 -- Coding here
 
-
+replaceDigits :: String -> String
+replaceDigits str = replace' str ""
+  where
+    replace' "" acc = acc
+    replace' (x : xs) acc
+      | x < '5' = '0' : replace' xs acc
+      | otherwise = '1' : replace' xs acc
 
 -- Exercise 5.18
 -----------------------------------------------------------------------------------------------------------
