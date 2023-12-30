@@ -281,7 +281,8 @@ intsNto1 n = foldl (flip (:)) [] [1 .. n]
 
 -- Coding here
 
-
+reverseStr :: String -> String
+reverseStr = reverse
 
 -- Exercise 5.15
 -----------------------------------------------------------------------------------------------------------
