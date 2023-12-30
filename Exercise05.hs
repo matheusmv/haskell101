@@ -372,7 +372,8 @@ replaceDigits str = replace' str ""
 
 -- Coding here
 
-
+toUpperCase :: String -> String
+toUpperCase = map toUpper
 
 -- Exercise 5.20
 -----------------------------------------------------------------------------------------------------------
