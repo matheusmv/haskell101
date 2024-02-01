@@ -20,7 +20,17 @@ module Exercise06 where
 
 -- Coding here
 
-
+getScoreLetterGrade :: (Fractional a, Ord a) => a -> a -> a -> [Char]
+getScoreLetterGrade g1 g2 g3 =
+  case avg g1 g2 g3 of
+    grade
+      | grade >= 90 -> "A"
+      | grade >= 80 -> "B"
+      | grade >= 70 -> "C"
+      | grade >= 60 -> "D"
+      | otherwise -> "F"
+  where
+    avg g' g'' g''' = (g' + g'' + g''') / 3
 
 -- Exercise 6.2
 -----------------------------------------------------------------------------------------------------------
